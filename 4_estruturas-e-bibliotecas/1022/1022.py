@@ -6,9 +6,18 @@ BEE 1022 - TDA Racional - Nível 4 - Estruturas e Bibliotecas
 
 import math
 
+# math.gcd pode ser feito da seguite forma usando o algoritmo de euclides
+# como no problema 1028 em java.
+
+
+def MDC(numero1, numero2):
+    return numero1 if numero2 == 0 else MDC(numero2, numero1 % numero2)
+
+
 def imprime(rnf, rdf):
     print(f"{rnf}/{rdf}", end=" = ")
     mdc(rnf, rdf)
+
 
 def mdc(rnf, rdf):
     mdc = math.gcd(rnf, rdf)
@@ -21,6 +30,7 @@ def soma(n1, d1, n2, d2):
     rnf = n1 * d2 + n2 * d1
     rdf = d1 * d2
     imprime(rnf, rdf)
+
 
 def subtrai(n1, d1, n2, d2):
     rnf = n1 * d2 - n2 * d1
@@ -39,10 +49,6 @@ def divide(n1, d1, n2, d2):
     rdf = d1 * n2
     imprime(rnf, rdf)
 
-# comandos = "1 / 2 + 3 / 4".split(" ")
-# comandos = "1 / 2 - 3 / 4".split(" ")
-# comandos = "2 / 3 * 6 / 6".split(" ")
-# comandos = "1 / 2 / 3 / 4 ".split(" ")
 
 N = int(input())
 for i in range(N):
@@ -52,11 +58,12 @@ for i in range(N):
     n2 = int(comandos[4])
     d2 = int(comandos[6])
     op = comandos[3]
+
     if op == "+":
         soma(n1, d1, n2, d2)
     elif op == "-":
         subtrai(n1, d1, n2, d2)
     elif op == "*":
         multiplica(n1, d1, n2, d2)
-    else:
+    elif op == "/":
         divide(n1, d1, n2, d2)
