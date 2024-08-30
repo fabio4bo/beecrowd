@@ -1,3 +1,7 @@
+"""
+BEE 2453 - Língua do P - Nível 4 - Ad-hoc
+"""
+
 entrada = input()
 
 words = entrada.split()

@@ -1,3 +1,7 @@
+"""
+BEE 1097 - Sequencia IJ 3 - Nível 1 - Iniciante
+"""
+#Vê como foi feito em java.
 i = 1;
 j = 7;
 

@@ -1,11 +1,9 @@
+"""
+BEE 1866 - Conta - Nível 1 - Iniciante
+"""
+
 C = int(input());
 
 for i in range(C):
-    N = int(input());
-    S = 0;
-    for j in range(N):
-        if(j % 2 == 0):
-            S+=1;
-        else:
-            S-=1;
-    print(S);
+    N = int(input())
+    print(N%2)
