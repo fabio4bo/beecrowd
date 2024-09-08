@@ -10,7 +10,7 @@
 *.vsix
 
 #Pasta de bináris
-bin/
+.bin/
 tests/
 #Java
 *.class
