@@ -50,7 +50,7 @@ def set_category_name(arg):
         case "g":
             return "Graph"
         case "m":
-            return "Mathmatics"
+            return "Mathematics"
         case "p":
             return "Paradigms"
         case "s":
