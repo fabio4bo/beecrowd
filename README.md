@@ -1,7 +1,7 @@
 
 | Categories | Python | Java | C/C++ |
 | -- | -- | -- | -- |
-| Beginner | 21 | 9 | 5 |
+| Beginner | 22 | 9 | 5 |
 | Ad-Hoc | 3 | 1 | 3 |
 | Strings | 3 | 2 | 0 |
 | Data Structures and Libraries | 3 | 0 | 0 |
@@ -10,4 +10,4 @@
 | Graph | 0 | 0 | 0 |
 | Computational Geometry | 0 | 0 | 0 |
 | SQL | 0 | 0 | 0 |
-| Total | 52 | 14 | 9 |
+| Total | 53 | 14 | 9 |
