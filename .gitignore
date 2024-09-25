@@ -16,3 +16,5 @@ tests/
 *.class
 *.jar
 
+.venv
+
