@@ -1,7 +1,8 @@
 .vscode/*
 #!.vscode/tasks.json
-
+.idea
 *.code-workspace
+tmp.in
 
 # Local History for Visual Studio Code
 .history/
