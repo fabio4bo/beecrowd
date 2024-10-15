@@ -3,6 +3,7 @@
 .idea
 *.code-workspace
 tmp.in
+tmp.out
 
 # Local History for Visual Studio Code
 .history/

@@ -1,3 +1,7 @@
+"""
+BEE 1098 - Sequence IJ 4 - Level 1 - Beginner
+"""
+
 from decimal import Decimal, getcontext
 
 getcontext().prec = 2

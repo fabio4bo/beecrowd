@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 HOME_USER = os.path.expanduser("~")
-PROJECT_PATH = HOME_USER + "/projects/beecrowd/"
+PROJECT_PATH = HOME_USER + "/development/beecrowd/"
 
 # python new_file b ".java" 1000  1 "Hello World"
 category = sys.argv[1]
@@ -67,26 +67,31 @@ def create_folder(dir):
 
 
 def create_file(file_path):
+    header = (
+        "BEE "
+        + f"{problem_number} -"
+        + f"{problem_name} - Level "
+        + f"{level} - "
+        + f"{set_category_name(category)}"
+    )
     try:
         if ext_language == ".py":
             with open(file_path, "x") as file:
                 file.write('"""\n')
-                file.write(
-                    f"BEE {problem_number} - {problem_name} - Level {level} - {set_category_name(category)}"
-                )
+                file.write(header)
                 file.write('\n"""')
         elif ext_language == ".java":
             with open(file_path, "x") as file:
                 file.write("/*\n")
                 file.write(
-                    f"* BEE {problem_number} - {problem_name} - Level {level} - {set_category_name(category)}"
+                    "* "+header
                 )
                 file.write("\n*/")
         elif ext_language == ".cpp":
             with open(file_path, "x") as file:
                 file.write("/*\n")
                 file.write(
-                    f"* BEE {problem_number} - {problem_name} - Level {level} - {set_category_name(category)}"
+                    "* "+header
                 )
                 file.write("\n*/")
     except FileExistsError:
