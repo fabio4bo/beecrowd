@@ -1,12 +1,21 @@
-from decimal import Decimal, getcontext
+while True:
 
-getcontext().prec = 2
-i = Decimal(0)
+    n = -1
+    while not n.is_integer() or n < 0:
+        print("nota invalida")
+        n = float(input())
 
-while i <= Decimal(2):
-    for j in range(1, 4):
-        if float(i).is_integer():
-            print(f"I={i:.0f} J={j+i:.0f}")
-        else:
-            print(f"I={i:.1f} J={j+i:.1f}")
-    i += Decimal(0.2)
+    m = -1
+    while not n.is_integer() or n < 0:
+        print("nota invalida")
+        n = float(input())
+
+    print(f"media = {n+m / 2:.2f}")
+
+    r = int(input())
+    while r != 1 and r != 2:
+        print("novo calculo (1-sim 2-nao)")
+        r = int(input())
+
+    if r == 2:
+        break
