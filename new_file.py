@@ -69,31 +69,27 @@ def create_folder(dir):
 def create_file(file_path):
     header = (
         "BEE "
-        + f"{problem_number} -"
-        + f"{problem_name} - Level "
-        + f"{level} - "
-        + f"{set_category_name(category)}"
+        f"{problem_number} -"
+        f"{problem_name} - Level "
+        f"{level} - "
+        f"{set_category_name(category)}"
     )
     try:
         if ext_language == ".py":
             with open(file_path, "x") as file:
                 file.write('"""\n')
                 file.write(header)
-                file.write('\n"""')
+                file.write('\n"""\n')
         elif ext_language == ".java":
             with open(file_path, "x") as file:
                 file.write("/*\n")
-                file.write(
-                    "* "+header
-                )
-                file.write("\n*/")
+                file.write("* " + header)
+                file.write("\n*/\n")
         elif ext_language == ".cpp":
             with open(file_path, "x") as file:
                 file.write("/*\n")
-                file.write(
-                    "* "+header
-                )
-                file.write("\n*/")
+                file.write("* " + header)
+                file.write("\n*/\n")
     except FileExistsError:
         print(f"The file '{file_path}' already exists.")
 
