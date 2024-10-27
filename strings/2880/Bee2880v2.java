@@ -6,7 +6,7 @@ import java.util.Arrays;
 /**
  * BEE 2880
  */
-public class BEE2880 {
+public class Bee2880v2 {
     public static void main(String[] args) throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader in = new BufferedReader(isr);
