@@ -69,7 +69,7 @@ def create_folder(dir):
 def create_file(file_path):
     header = (
         "BEE "
-        f"{problem_number} -"
+        f"{problem_number} - "
         f"{problem_name} - Level "
         f"{level} - "
         f"{set_category_name(category)}"
@@ -97,7 +97,10 @@ def create_file(file_path):
 file_path = set_category_path(category) + problem_number + "/"
 create_folder(file_path)
 
-file_abs_path = file_path + problem_number + ext_language
+j = ""
+if ext_language == ".java":
+    j = "Bee"
+file_abs_path = file_path + j + problem_number + ext_language
 create_file(file_abs_path)
 
-subprocess.run(["code", file_path + problem_number + ext_language])
+subprocess.run(["code", file_abs_path])
