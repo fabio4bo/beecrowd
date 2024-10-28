@@ -7,7 +7,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Main {
+public class Bee1012 {
 
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat("0.000");

@@ -4,7 +4,7 @@ import java.math.BigInteger;
 /**
  * Bee1161 - Soma de Fatoriais
  */
-public class Bee1161 {
+public class Bee1161v2 {
     public static void main(String[] args) throws IOException {
         InputStreamReader ir = new InputStreamReader(System.in);
         BufferedReader in = new BufferedReader(ir);
