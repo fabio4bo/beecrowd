@@ -13,7 +13,8 @@ public class Bee1041 {
         double x,y;
         x = entrada.nextDouble();
         y = entrada.nextDouble();
-
+        entrada.close();
+        
         if(x == 0.0 && y == 0.0){
             System.out.println("Origem");
         }else if(x>0.0 && y>0.0){
@@ -29,7 +30,6 @@ public class Bee1041 {
         }else if(x < 0 && y > 0){
             System.out.println("Q2");
         }
-        
         
     }
 

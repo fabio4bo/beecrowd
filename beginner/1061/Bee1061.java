@@ -25,6 +25,7 @@ public class Bee1061 {
 		dia2 = entrada.nextLine();
 		dia2Split = dia2.split(" ");
 		horaFinal = entrada.nextLine();
+        entrada.close();
 		horaFinalSplit = horaFinal.split(" : ");
 		
 		

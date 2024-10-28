@@ -16,6 +16,7 @@ public class Bee1036 {
         double A = entrada.nextDouble();
         double B = entrada.nextDouble();
         double C = entrada.nextDouble();
+        entrada.close();
 
         double delta = Math.pow(B, 2) - (4 * A * C);
 

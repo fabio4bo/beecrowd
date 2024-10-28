@@ -1,5 +1,5 @@
 """
-BEE 1279 - Ano Bissexto ou Ano não Bissexto - Level 6 - Mathematics
+BEE 1279 - Ano Bissexto ou Ano não Bissexto - Nível 6 - Matemática
 """
 
 
@@ -23,10 +23,9 @@ def is_bulukulu(year):
 flag = False
 while True:
     try:
+        year = int(input())
         if flag:
             print()
-        year = int(input())
-        
         if is_bissexto(year):
             print("This is leap year.")
         if is_huluculu(year):
@@ -35,7 +34,7 @@ while True:
             print("This is bulukulu festival year.")
 
         if not is_bissexto(year) and not is_huluculu(year) and not is_bulukulu(year):
-            print("This is an ordinary year. ")
+            print("This is an ordinary year.")
 
         flag = True
     except EOFError:  # eof

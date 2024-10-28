@@ -18,7 +18,8 @@ public class Bee1012 {
         A = entrada.nextDouble();
         B = entrada.nextDouble();
         C = entrada.nextDouble();
-
+        entrada.close();
+        
         // Area do triangulo retangulo (a*c)/2
         double areaTR = (A * C) / 2;
         System.out.print("TRIANGULO: " + df.format(areaTR) + "\n");

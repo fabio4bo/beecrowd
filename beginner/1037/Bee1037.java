@@ -13,6 +13,7 @@ public class Bee1037 {
         double A;
 
         A = entrada.nextDouble();
+        entrada.close();
 
         if(A >= 0 && A <= 25)
             System.out.print("Intervalo [0,25]\n");

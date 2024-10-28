@@ -19,6 +19,8 @@ public class Bee1001 {
         int A, B, X;
         A = entrada.nextInt();
         B = entrada.nextInt();
+        entrada.close();
+        
         X = A + B;
         System.out.println("X = " + X);
     }

@@ -17,6 +17,7 @@ public class Bee1038 {
         final double Refri = 1.5;// 5
         int codigo = entrada.nextInt();
         int quantidade = entrada.nextInt();
+        entrada.close();
 
         switch (codigo) {
             case 1:

@@ -4,7 +4,8 @@ BEE 1042 - Simple Sort - Level 2 - Beginner
 
 numbers = [int(i) for i in input().strip().split(" ")]
 
-original_sort = [i for i in numbers]
+original_sort = [i for i in numbers] # ver sobre cópia
+
 numbers.sort()
 
 for i in numbers:

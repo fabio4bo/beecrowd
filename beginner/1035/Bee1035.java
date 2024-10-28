@@ -14,6 +14,7 @@ public class Bee1035 {
         int B = entrada.nextInt();
         int C = entrada.nextInt();
         int D = entrada.nextInt();
+        entrada.close();
 
         if (B > C && D > A && (C + D) > (A + B) && (C > 0 && D > 0) && A % 2 == 0)
             System.out.print("Valores aceitos\n");
