@@ -6,7 +6,7 @@ import math
 
 
 def prime(n):
-    primo = True
+    primo = True # ?
 
     if n <= 1:
         return False
